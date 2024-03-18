@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-03-18T04:53:12 EET" name="Default suite" finished-at="2024-03-18T04:53:15 EET" duration-ms="2580">
+    <groups>
+    </groups>
+    <test started-at="2024-03-18T04:53:12 EET" name="Default test" finished-at="2024-03-18T04:53:15 EET" duration-ms="2580">
+      <class name="HomePage.HomePageTestCases">
+        <test-method is-config="true" signature="mySetup()[pri:0, instance:HomePage.HomePageTestCases@12bd8a64]" started-at="2024-03-18T04:53:12 EET" name="mySetup" finished-at="2024-03-18T04:53:15 EET" duration-ms="2310" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mySetup -->
+        <test-method signature="checkContactNumber()[pri:0, instance:HomePage.HomePageTestCases@12bd8a64]" started-at="2024-03-18T04:53:15 EET" name="checkContactNumber" finished-at="2024-03-18T04:53:15 EET" duration-ms="50" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkContactNumber -->
+        <test-method signature="checkFlightsDate()[pri:0, instance:HomePage.HomePageTestCases@12bd8a64]" started-at="2024-03-18T04:53:15 EET" name="checkFlightsDate" finished-at="2024-03-18T04:53:15 EET" duration-ms="61" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkFlightsDate -->
+        <test-method signature="checkHotelTabIsNotSelected()[pri:0, instance:HomePage.HomePageTestCases@12bd8a64]" started-at="2024-03-18T04:53:15 EET" name="checkHotelTabIsNotSelected" finished-at="2024-03-18T04:53:15 EET" duration-ms="31" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkHotelTabIsNotSelected -->
+        <test-method signature="checkQitafLogo()[pri:0, instance:HomePage.HomePageTestCases@12bd8a64]" started-at="2024-03-18T04:53:15 EET" name="checkQitafLogo" finished-at="2024-03-18T04:53:15 EET" duration-ms="34" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkQitafLogo -->
+        <test-method signature="defaultCurrencySARTest()[pri:0, instance:HomePage.HomePageTestCases@12bd8a64]" started-at="2024-03-18T04:53:15 EET" name="defaultCurrencySARTest" finished-at="2024-03-18T04:53:15 EET" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- defaultCurrencySARTest -->
+        <test-method signature="defaultEnglishLanguageTest()[pri:0, instance:HomePage.HomePageTestCases@12bd8a64]" started-at="2024-03-18T04:53:15 EET" name="defaultEnglishLanguageTest" finished-at="2024-03-18T04:53:15 EET" duration-ms="26" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- defaultEnglishLanguageTest -->
+      </class> <!-- HomePage.HomePageTestCases -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
