@@ -35,14 +35,14 @@ public class HotelPageTestCase extends Parameters {
 
 		if (currentLanguage.equals("en")) {
 
-			int randomLanguage = random.nextInt(3);
+			int randomLanguage = random.nextInt(cityInENLanguage.length);
 
 			locationInput.sendKeys(cityInENLanguage[randomLanguage]);
 			location = cityInENLanguage[randomLanguage];
 
 		} else {
 
-			int randomLanguage = random.nextInt(2);
+			int randomLanguage = random.nextInt(cityInARLanguage.length);
 
 			locationInput.sendKeys(cityInARLanguage[randomLanguage]);
 			location = cityInARLanguage[randomLanguage];

@@ -1,7 +1,5 @@
 package HomePage;
 
-
-
 import java.util.Random;
 
 import org.openqa.selenium.WebDriver;
