@@ -25,26 +25,26 @@ public class HomePageTestCases extends Parameters {
 		}
 	}
 
-	@Test(priority = 1)
+	@Test(priority = 1 , description = "Check Default Language - EN -")
 	public void defaultEnglishLanguageTest() {
 		String actualLanguage = driver.findElement(By.tagName("html")).getAttribute("lang");
 		myAssert.assertEquals(actualLanguage, expectedLanguage);
 	}
 
-	@Test(priority = 1)
+	@Test(priority = 1 , description = "Check Default Currency - SAR -")
 	public void defaultCurrencySARTest() {
 		String actualCurrency = driver.findElement(By.xpath("//button[@data-testid=\'Header__CurrencySelector\']"))
 				.getText();
 		myAssert.assertEquals(actualCurrency, expectedCurrency);
 	}
 
-	@Test(priority = 1)
+	@Test(priority = 1 , )
 	public void checkContactNumber() {
 		String actualContact = driver.findElement(By.xpath("//strong[normalize-space()='+966554400000']")).getText();
 		myAssert.assertEquals(actualContact, expectedContact);
 	}
 
-	@Test(priority = 1)
+	@Test(priority = 1 , description = "Check if Qitaf Logo Is Displayed or Not")
 	public void checkQitafLogo() throws InterruptedException {
 		boolean actualLogo = driver.findElement(By.xpath("//div[@class='sc-fihHvN eYrDjb']//*[name()='svg']"))
 				.isDisplayed();
@@ -58,7 +58,7 @@ public class HomePageTestCases extends Parameters {
 		myAssert.assertEquals(actualHotelTab, expectedHotelTab);
 	}
 
-	@Test(priority = 1)
+	@Test(priority = 1 , description = "Check if Departure Date is Tomorrow And Return Date is After Tomorrow")
 	public void checkFlightsDate() throws InterruptedException {
 
 		LocalDate today = LocalDate.now();
@@ -96,7 +96,7 @@ public class HomePageTestCases extends Parameters {
 		}
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 3 , description = "Test Search Procces And Show Search Result With Assertion")
 	public void searchHotelProcces() throws InterruptedException {
 		WebElement hotelTab = driver.findElement(By.id("uncontrolled-tab-example-tab-hotels"));
 		hotelTab.click();
