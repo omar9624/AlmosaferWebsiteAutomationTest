@@ -10,7 +10,10 @@
           <include name="mySetup"/>
           <include name="checkHotelTabIsNotSelected"/>
           <include name="defaultEnglishLanguageTest"/>
+          <include name="randomlyChooseLanguages"/>
           <include name="checkContactNumber"/>
+          <include name="searchHotelProcces"/>
+          <include name="checkFlightsDate"/>
         </methods>
       </class> <!-- HomePage.HomePageTestCases -->
     </classes>

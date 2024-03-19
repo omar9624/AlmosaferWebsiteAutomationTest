@@ -1,8 +1,8 @@
 package HomePage;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.text.DateFormat;
+
+
+import java.util.Random;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -13,6 +13,8 @@ public class Parameters {
 	
 	Assertion myAssert = new Assertion();
 	
+	Random random = new Random();
+	
 	String url = "https://www.almosafer.com/en";
 	String expectedLanguage = "en";
 	String expectedCurrency = "SAR";
@@ -20,10 +22,7 @@ public class Parameters {
 	boolean expectedLogo = true;
 	String expectedHotelTab = "false";
 	
-	DateFormat dateFormat = new SimpleDateFormat("dd"); 
-	Date date = new Date();
-	String dayOfDate = dateFormat.format(date);
-	int expectedFlightDepartureDate = Integer.parseInt(dayOfDate) + 1;
-	int expectedFlightReturnDate = Integer.parseInt(dayOfDate) + 2;
+	
+
 	
 }
