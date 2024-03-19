@@ -100,16 +100,10 @@ public class HomePageTestCases extends Parameters {
 	public void searchHotelProcces() throws InterruptedException {
 		WebElement hotelTab = driver.findElement(By.id("uncontrolled-tab-example-tab-hotels"));
 		hotelTab.click();
-
-		String[] cityInENLanguage = { "Dubai", "Jeddah", "Riyadh" };
-		String[] cityInARLanguage = { "دبي", "جدة" };
-		String location = "";
 		
 		String currentLanguage = driver.findElement(By.tagName("html")).getAttribute("lang");
 
 		WebElement locationInput = driver.findElement(By.xpath("//input[@data-testid='AutoCompleteInput']"));
-
-		System.out.println(currentLanguage);
 
 		if (currentLanguage.equals("en")) {
 	
@@ -120,7 +114,6 @@ public class HomePageTestCases extends Parameters {
 
 		} else {
 
-			
 			int randomLanguage = random.nextInt(2);
 
 			locationInput.sendKeys(cityInARLanguage[randomLanguage]);
@@ -149,10 +142,6 @@ public class HomePageTestCases extends Parameters {
 
 		
 		myAssert.assertEquals(actualSearchresult, location);
-		
-		Thread.sleep(5000);
-		WebElement lowpriceTab = driver.findElement(By.xpath("//button[@data-testid='HotelSearchResult__sort__LOWEST_PRICE']"));
-		lowpriceTab.click();
 		
 	}
 

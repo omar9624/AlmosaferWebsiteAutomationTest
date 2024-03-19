@@ -1,6 +1,4 @@
-package HomePage;
-
-
+package HotelPage;
 
 import java.util.Random;
 
@@ -11,20 +9,13 @@ import org.testng.asserts.Assertion;
 public class Parameters {
 	WebDriver driver = new ChromeDriver();
 	
-	Assertion myAssert = new Assertion();
+	String url = "https://www.almosafer.com/en";
 	
 	Random random = new Random();
 	
-	String url = "https://www.almosafer.com/en";
-	String expectedLanguage = "en";
-	String expectedCurrency = "SAR";
-	String expectedContact = "+966554400000";
-	boolean expectedLogo = true;
-	String expectedHotelTab = "false";
+	Assertion myAssert = new Assertion();
 	
 	String[] cityInENLanguage = { "Dubai", "Jeddah", "Riyadh" };
 	String[] cityInARLanguage = { "دبي", "جدة" };
 	String location = "";
-
-	
 }
